@@ -43,7 +43,8 @@ class ApplicationController < ActionController::API
 
   # Use enhanced JSON serialization
   include ActionController::Serialization
-
+  # Added for token authentication
+  # include ActionController::HttpAuthentication::Token::ControllerMethods
   # return 404 for failed search by id
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
   def record_not_found

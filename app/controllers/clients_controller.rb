@@ -1,5 +1,5 @@
 class ClientsController < ProtectedController
-  before_action :set_client, only: [:update, :destroy]
+  before_action :set_client, only: [:show, :update, :destroy]
 
   # GET /clients
   def index
@@ -10,7 +10,7 @@ class ClientsController < ProtectedController
 
   # GET /clients/1
   def show
-    render json: Client.find(params[:id])
+    render json: @client
   end
 
   # POST /clients
@@ -37,15 +37,14 @@ class ClientsController < ProtectedController
   def destroy
     @client.destroy
   end
-
+  private
   # Use callbacks to share common setup or constraints between actions.
   def set_client
-    @client = current_user.client.find(params[:id])
+    @client = current_user.clients.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
   def client_params
     params.require(:client).permit(:first_name, :last_name, :email)
   end
-  private :set_client, :client_params
 end
