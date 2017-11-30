@@ -3,7 +3,7 @@ class ClientsController < ProtectedController
 
   # GET /clients
   def index
-    @clients = Client.all
+    @clients = current_user.clients.all
 
     render json: @clients
   end
