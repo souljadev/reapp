@@ -1,7 +1,7 @@
 #!/bin/bash
 
-curl --include --request POST "http://localhost:4741/clients" \
-  --header "Authorization: Token token=BAhJIiUwYjJkYjQ1YTY0YTVlMWIyNDBlN2JlZjhlODk4ZjMzNwY6BkVG--f2ce2be3013475f3ae2f7e2d516bb005400ec3c7" \
+curl --include --request GET "http://localhost:4741/clients" \
+  --header "Authorization: Token token=BAhJIiUyNGRlN2M1NGQ1Zjg3ZDFkMmVhNDljOGQ3NmIzMzZjMwY6BkVG--31a397c385d1198515568506eb3fe487a2683798" \
   --header "Content-Type: application/json" \
   --data '{
       "client": {
