@@ -34,12 +34,11 @@ Link to [ERD Overview](https://www.dropbox.com/s/ar3jsbqqn3jkc5n/erdfin.pdf/)
 
 I created a real estate crm app for tracking clients.
 
-After the idea, I created the ERD layout and followed the relationships to build out my tables for the database.
-Afterwards I ran scripts to make sure the backend worked before I created the database on heroku. The most important thing
-in this process to keep breaking down each problem into smaller problems and make sure I followed each step to the T. The hardest
-part of this was to re-train and constantly remind myself not to skip ahead. It's very easy to lose track of the task at hand, so staying
-organized and commit often was the best way I tackled my problems. I also started to add in git commits of what I will be working on next, so
-that it helps me keep on track when I check the commit log.
+I created the ERD layout and followed the relationships to build out my table in the database.
+I ran scripts to make sure the backend worked firsts, when successful I pushed database to heroku. The most important thing
+in this process was to keep breaking down each problem into smaller problems and make sure I followed each step to the T. The hardest
+part of my process was to not jump ahead. I had to re-train my thinking and constantly remind myself not to skip ahead. It's very easy to lose track of the task at hand. Staying organized and commit often was the best way I tackled my problems. I also took on a new strategy to help me stay organized, to add what I will be working on next in my commits.  It helped me stay on track especially when I left and came back to continue working on my project. I had to check the commit log constantly.
+
 
 ## Future Iterations
 
